@@ -1,9 +1,14 @@
 
 import { films } from '/assets/films.js'
-import { people } from '/assets/people.js'
-import { planets } from '/assets/planets.js'
-import { starships } from '/assets/starships.js'
-import { vehicles } from '/assets/vehicles.js'
-import { species } from '/assets/species.js'
+//import { people } from '/assets/people.js'
+//import { planets } from '/assets/planets.js'
+//import { starships } from '/assets/starships.js'
 
-console.log(people)
+let filmList = document.querySelector('#film-list')
+
+films.forEach((film) => {
+    let listItem = document.createElement('li')
+    listItem.textContent = film.title
+    filmList.appendChild(listItem)
+    console.log(film.title)
+})
