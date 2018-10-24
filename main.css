@@ -72,6 +72,37 @@ body {
     border: solid 4px skyblue;
   }
   
+  .starwars-tile {
+    width: 300px;
+    height: 263px;
+    border: solid 4px skyblue;
+  }
+
+  #species-list li {
+    display: inline-block;
+    margin: 1.5px;
+    padding: 1.2px;
+    list-style: none;
+    background-color: lightgray;
+    border-radius: 15px;
+  }
+
+  #species-list li:hover {
+    cursor: pointer;
+    background-color: skyblue;
+  }
+
+  #opening-crawl li {
+    display: inline;
+    margin: 3px;
+    padding: 2px;
+    list-style: none;
+  }
+
+  #movie-title li {
+    list-style: none;
+  }
+
   .project-title {
     font-size: 1.4rem;
     border-top: solid 3px skyblue
@@ -100,6 +131,12 @@ body {
     background: #888;
     padding: 20px;
     color: #fff;
+  }
+
+  marquee {
+    text-align: center;
+    background-color: black;
+    color: yellow;
   }
   
   @media only screen and (max-width: 500px) {

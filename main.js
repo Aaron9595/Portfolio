@@ -1,14 +1,38 @@
 
 import { films } from '/assets/films.js'
-//import { people } from '/assets/people.js'
-//import { planets } from '/assets/planets.js'
-//import { starships } from '/assets/starships.js'
+import { people } from '/assets/people.js'
+import { planets } from '/assets/planets.js'
+import { starships } from '/assets/starships.js'
+import { species } from '/assets/species.js'
+import { vehicles } from '/assets/vehicles.js'
 
-let filmList = document.querySelector('#film-list')
 
-films.forEach((film) => {
+let speciesList = document.querySelector('#species-list')
+
+species.forEach((species) => {
     let listItem = document.createElement('li')
-    listItem.textContent = film.title
-    filmList.appendChild(listItem)
-    console.log(film.title)
+    listItem.textContent = species.name
+    speciesList.appendChild(listItem)
 })
+
+let openingCrawl = document.querySelector('#opening-crawl')
+
+let listItem = document.createElement('li')
+listItem.textContent = films[0].opening_crawl
+openingCrawl.appendChild(listItem)
+
+
+let movieTitle = document.querySelector('#movie-title')
+
+let movie = document.createElement('li')
+movie.textContent = films[0].title
+movieTitle.appendChild(movie)
+
+// let speciesTitle = document.querySelector('#species-title')
+
+// let speciesName = document.createElement('li')
+// speciesName.textContent = species[0].name
+// speciesTitle.appendChild(speciesName)
+
+
+// console.log(films[0].opening_crawl)
