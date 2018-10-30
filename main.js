@@ -5,6 +5,7 @@ import { planets } from '/assets/planets.js'
 import { starships } from '/assets/starships.js'
 import { species } from '/assets/species.js'
 import { vehicles } from '/assets/vehicles.js'
+import { senatorData } from '/assets/senators.js'
 
 
 let speciesList = document.querySelector('#species-list')
@@ -35,4 +36,10 @@ movieTitle.appendChild(movie)
 // speciesTitle.appendChild(speciesName)
 
 
-// console.log(films[0].opening_crawl)
+const senators = senatorData.results[0].members
+
+const republicans = senators.filter(senator => senator.party === 'R')
+
+const democrats = senators.filter(senator => senator.party === 'D')
+
+console.log(`There are ${republicans.length} republicans and ${democrats.length} democrats in the Senate.`)
