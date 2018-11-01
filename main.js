@@ -5,7 +5,7 @@ import { planets } from '/assets/planets.js'
 import { starships } from '/assets/starships.js'
 import { species } from '/assets/species.js'
 import { vehicles } from '/assets/vehicles.js'
-import { senatorData } from '/assets/senators.js'
+
 
 
 let speciesList = document.querySelector('#species-list')
@@ -29,10 +29,30 @@ let movie = document.createElement('li')
 movie.textContent = films[0].title
 movieTitle.appendChild(movie)
 
-const senators = senatorData.results[0].members
+// const senators = senatorData.results[0].members
 
-const republicans = senators.filter(senator => senator.party === 'R')
+// const republicans = senators.filter(senator => senator.party === 'R')
+// const democrats = senators.filter(senator => senator.party === 'D')
 
-const democrats = senators.filter(senator => senator.party === 'D')
+// const maleSenators = senators.filter(senator => senator.gender === 'M')
+// const femaleSenators = senators.filter(senator => senator.gender === 'F')
 
-console.log(`There are ${republicans.length} republicans and ${democrats.length} democrats in the Senate.`)
+// const mostLoyalRepublican = republicans.reduce((acc, senator) => senator.votes_with_party_pct > 0 ? senator : acc, 0)
+// const mostLoyalDemocrat = democrats.reduce((acc, senator) => senator.votes_with_party_pct > 0 ? senator : acc, 0)
+
+// const senWithPics = senators.map(senator => {
+//     senator.imgURL = `https://www.govtrack.us/data/photos/${senator.govtrack_id}-200px.jpeg`
+//     return senator
+// })
+
+// console.log(senWithPics)
+
+// // console.log(`There are ${maleSenators.length} male senators and ${femaleSenators.length} female senators in the Senate.`)
+// let pictureDiv = document.querySelector('container')
+
+// senWithPics.forEach(senator => {
+//     let senatorPic = document.createElement('img')
+//     senatorPic.src = senator.imgURL
+//     pictureDiv.appendChild(senatorPic)
+// })
+
