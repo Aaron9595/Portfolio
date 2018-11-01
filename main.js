@@ -29,13 +29,6 @@ let movie = document.createElement('li')
 movie.textContent = films[0].title
 movieTitle.appendChild(movie)
 
-// let speciesTitle = document.querySelector('#species-title')
-
-// let speciesName = document.createElement('li')
-// speciesName.textContent = species[0].name
-// speciesTitle.appendChild(speciesName)
-
-
 const senators = senatorData.results[0].members
 
 const republicans = senators.filter(senator => senator.party === 'R')
