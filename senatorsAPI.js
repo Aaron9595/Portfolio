@@ -13,6 +13,7 @@ const mostLoyalDemocrat = democrats.reduce((acc, senator) => senator.votes_with_
 
 const senWithPics = senators.map(senator => {
     senator.imgURL = `https://www.govtrack.us/data/photos/${senator.govtrack_id}-200px.jpeg`
+    // Need to download photo of senator to replace invalid picture in the API
     // if(senator.govtrack_id === '412743') {
     //     senator.imgURL = `https://localhost:5500/assets/cindy.jpeg`
     // }
