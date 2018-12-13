@@ -139,6 +139,10 @@ html, body {
     background-color: black;
     color: yellow;
   }
+
+  .headspace {
+    margin-top: 80px;
+  }
   
   @media only screen and (max-width: 500px) {
     nav ul {
@@ -151,4 +155,3 @@ html, body {
       margin: 40px 0;
     }
   }
-
